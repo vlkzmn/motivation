@@ -23,8 +23,27 @@
   }
 
   &__link {
+    position: relative;
     font-size: 24px;
     color: $colorWhite;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: $colorWhite;
+      transform: scaleX(0);
+      transition: transform $smoothTime;
+    }
+
+    &:hover {
+      &::after {
+        transform: scaleX(1);
+      }
+    }
   }
 
   &__nav-right {
@@ -33,12 +52,31 @@
   }
 
   &__icon {
+    display: inline-block;
     width: 40px;
     height: 40px;
+    line-height: 0;
+    background-size: contain;
     transition: transform $smoothTime;
 
     &:hover {
-      transform: scale(110%);
+      transform: scale(1.1);
+    }
+
+    &--instagram {
+      background-image: url(../styles/icons/instagram.svg);
+    }
+
+    &--telegram {
+      background-image: url(../styles/icons/telegram.svg);
+    }
+
+    &--instagram-rose {
+      background-image: url(../styles/icons/instagram-rose.svg);
+    }
+
+    &--telegram-rose {
+      background-image: url(../styles/icons/telegram-rose.svg);
     }
 
     &--big {
@@ -47,30 +85,41 @@
     }
   }
 
-  &__laterM {
+  &__star {
     position: absolute;
-    top: 0;
-    right: 20px;
+    top: 35%;
+    left: 40%;
+    width: 500px;
+    height: 500px;
+    background-image: url(../images/star.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+  }
+
+  &__letter-M {
+    position: absolute;
+    top: 15px;
+    right: 30px;
     width: 477px;
     height: 600px;
-    content: "";
     background-image: url(../styles/icons/m-small.png);
     z-index: -1;
-    animation: move-m 5s infinite linear;
+    transition: transform 4000ms linear;
+ // animation: move-m 8s infinite linear;
   }
 
-  @keyframes move-m {
-    from {
-      transform: scale(100%);
-    }
-    50% {
-      transform: scale(90%);
-    }
-    to {
-      transform: scale(100%);
-    }
-  }
-
+  // @keyframes move-m {
+  //   from {
+  //     transform: scale(100%);
+  //   }
+  //   50% {
+  //     transform: scale(90%);
+  //   }
+  //   to {
+  //     transform: scale(100%);
+  //   }
+  // }
 
   &__content-wrapper {
     max-width: 1300px;
@@ -102,6 +151,7 @@
   }
 
   &__buttons {
+    position: relative;
     display: flex;
     gap: 20px;
     padding: 0 40px;
@@ -116,6 +166,7 @@
     width: 400px;
     font-family: "Ubuntu";
     font-size: 20px;
+    text-align: center;
     letter-spacing: 5px;
     color: $bg-color;
   }
