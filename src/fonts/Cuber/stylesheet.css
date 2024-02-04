@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'SK Cuber Expanded Rounded';
+    src: url('SKCuber-ExpandedRounded.eot');
+    src: local('SK Cuber Expanded Rounded'), local('SKCuber-ExpandedRounded'),
+        url('SKCuber-ExpandedRounded.eot?#iefix') format('embedded-opentype'),
+        url('SKCuber-ExpandedRounded.woff2') format('woff2'),
+        url('SKCuber-ExpandedRounded.woff') format('woff'),
+        url('SKCuber-ExpandedRounded.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SK Cuber Expanded';
+    src: url('SKCuber-Expanded.eot');
+    src: local('SK Cuber Expanded'), local('SKCuber-Expanded'),
+        url('SKCuber-Expanded.eot?#iefix') format('embedded-opentype'),
+        url('SKCuber-Expanded.woff2') format('woff2'),
+        url('SKCuber-Expanded.woff') format('woff'),
+        url('SKCuber-Expanded.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SK Cuber Expanded Rounded Outline';
+    src: url('SKCuber-ExpRoundedOutline.eot');
+    src: local('SK Cuber Expanded Rounded Outline'), local('SKCuber-ExpRoundedOutline'),
+        url('SKCuber-ExpRoundedOutline.eot?#iefix') format('embedded-opentype'),
+        url('SKCuber-ExpRoundedOutline.woff2') format('woff2'),
+        url('SKCuber-ExpRoundedOutline.woff') format('woff'),
+        url('SKCuber-ExpRoundedOutline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SK Cuber Expanded Outline';
+    src: url('SKCuber-ExpandedOutline.eot');
+    src: local('SK Cuber Expanded Outline'), local('SKCuber-ExpandedOutline'),
+        url('SKCuber-ExpandedOutline.eot?#iefix') format('embedded-opentype'),
+        url('SKCuber-ExpandedOutline.woff2') format('woff2'),
+        url('SKCuber-ExpandedOutline.woff') format('woff'),
+        url('SKCuber-ExpandedOutline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,122 @@
+.header {
+  position: relative;
+
+  &__nav-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background: $colorBlue;
+    background: linear-gradient(180deg, rgba(60,108,168,1) -30%, rgba(234,178,187,1) 80%);
+  }
+
+  &__nav {
+    margin: 0 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+  }
+
+  &__nav-left {
+    display: flex;
+    gap: 100px;
+  }
+
+  &__link {
+    font-size: 24px;
+    color: $colorWhite;
+  }
+
+  &__nav-right {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    transition: transform $smoothTime;
+
+    &:hover {
+      transform: scale(110%);
+    }
+
+    &--big {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__laterM {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 477px;
+    height: 600px;
+    content: "";
+    background-image: url(../styles/icons/m-small.png);
+    z-index: -1;
+    animation: move-m 5s infinite linear;
+  }
+
+  @keyframes move-m {
+    from {
+      transform: scale(100%);
+    }
+    50% {
+      transform: scale(90%);
+    }
+    to {
+      transform: scale(100%);
+    }
+  }
+
+
+  &__content-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    font-family: "SK Cuber Expanded Rounded Outline", serif;
+    font-size: 10vmin;
+    color: $colorWhite;
+  }
+
+  &__subtitle {
+    margin-bottom: 50px;
+    font-family: "SK Cuber Expanded Rounded", serif;
+    font-size: 50px;
+    color: $colorBlue;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    font-size: 35px;
+    letter-spacing: 10px;
+    color: $colorWhite;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 20px;
+    padding: 0 40px;
+    align-items: center;
+    width: max-content;
+    height: 90px;
+    background-color: $colorWhite;
+    border-radius: 45px;
+  }
+
+  &__buttons-text {
+    width: 400px;
+    font-family: "Ubuntu";
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: $bg-color;
+  }
+}
