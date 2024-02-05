@@ -1,0 +1,36 @@
+.about {
+  margin-bottom: 90px;
+  padding-top: 90px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  &__image {
+    width: 300px;
+
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-family: "Ubuntu", Arial;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+
+  &__list-item {
+    width: 500px;
+    height: 70px;
+    margin-bottom: 20px;
+    padding: 30px 0 0 120px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    border-radius: 70px;
+    background: $colorBlue;
+    background: linear-gradient(180deg, rgba(60,108,168,0.2) -30%, rgba(234,178,187,1) 80%);
+  }
+}

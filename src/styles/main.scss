@@ -3,6 +3,12 @@
 @import "typography";
 
 @import "./blocks/header.scss";
+@import "./blocks/about.scss";
+@import "./blocks/price.scss";
+
+html {
+  scroll-behavior: smooth;
+}
 
 body, h1, h2, h3, p, ul, li {
   margin: 0;
@@ -19,13 +25,7 @@ a {
 }
 
 body {
-  background: $bg-color;
+  background: $colorRose;
   font-family: "Blackest Text Trial", sans-serif;
-}
-
-
-
-.ubuntu {
-  font-family: "Ubuntu italic", serif;
-  font-size: 50px;
+  color: $colorWhite;
 }
