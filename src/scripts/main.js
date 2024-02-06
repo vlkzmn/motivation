@@ -24,8 +24,8 @@ const arrowUp = document.querySelector(".footer__up-arrow");
 
 window.addEventListener("scroll", function () {
   if (
-    document.body.scrollTop > 500 ||
-    document.documentElement.scrollTop > 500
+    document.body.scrollTop > 500
+    || document.documentElement.scrollTop > 500
   ) {
     arrowUp.classList.add("footer__up-arrow--show");
   } else {
