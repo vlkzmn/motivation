@@ -115,7 +115,7 @@
   &__star {
     position: absolute;
     top: 35%;
-    left: 35%;
+    left: calc(45% - 10vw);
     width: 500px;
     height: 500px;
     background-image: url(../images/star.png);
