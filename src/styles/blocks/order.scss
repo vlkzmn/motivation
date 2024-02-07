@@ -1,0 +1,99 @@
+.order {
+  padding: 80px 0;
+
+  &__wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-family: "SK Cuber Expanded", serif;
+    font-size: 72px;
+    font-weight: 400;
+  }
+
+  &__text-order {
+    margin-bottom: 40px;
+    font-family: "Ubuntu italic", serif;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  &__text-more {
+    margin-bottom: 40px;
+    font-size: 60px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 120px;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    transition: transform $smoothTime;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &--instagram {
+      background-image: url(../styles/icons/instagram.svg);
+    }
+
+    &--telegram {
+      background-image: url(../styles/icons/telegram.svg);
+    }
+  }
+
+  &__papers {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__paper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 45%;
+    padding: 100px 20px 20px 120px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &--left {
+      background-image: url(../images/paper-1.png);
+    }
+
+    &--right {
+      background-image: url(../images/paper-2.png);
+    }
+  }
+
+  &__papers-title {
+    margin-bottom: 20px;
+    font-family: "JustBreathe", serif;
+    font-size: 70px;
+    color: $colorBlue;
+  }
+
+  &__papers-text {
+    margin-bottom: 20px;
+    margin-right: 80px;
+    font-family: "Pecita", serif;
+    font-size: 26px;
+    color: $colorBlue;
+  }
+
+  &__papers-promokod {
+    font-family: "Ubuntu", serif;
+    font-size: 26px;
+    color: $colorBlue;
+  }
+}
