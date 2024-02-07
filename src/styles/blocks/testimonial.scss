@@ -1,7 +1,10 @@
 .testimonial {
-  background-color: $colorBlue;
+  height: 2300px;
+  padding-top: 60px;
+  background-color: $colorLightBlue;
 
   &__wrapper {
+    position: relative;
     max-width: 1300px;
     margin: 0 auto;
   }
@@ -10,7 +13,7 @@
     margin-bottom: 40px;
     text-align: center;
     font-family: "SK Cuber Expanded Rounded Outline", serif;
-    font-size: 100px;
+    font-size: 110px;
     font-weight: 400;
     color: $colorRose;
   }
@@ -20,5 +23,90 @@
     font-family: "Ubuntu", Arial;
     font-size: 22px;
     color: $colorRose;
+  }
+
+  &__buble {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    &--first {
+      top: 320px;
+      left: -20px;
+      width: 420px;
+      height: 410px;
+      background-image: url(../images/buble-1.png);
+      // transform: rotate(-10deg);
+    }
+
+    &--second {
+      background-image: url(../images/buble-2.png);
+    }
+
+    &--third {
+      background-image: url(../images/buble-3.png);
+    }
+
+    &--fourth {
+      background-image: url(../images/buble-2.png);
+    }
+
+    &--fifth {
+      background-image: url(../images/buble-4.png);
+    }
+
+    &--sixth {
+      background-image: url(../images/buble-1.png);
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__image {
+    width: 500px;
+    height: 579px;
+  }
+
+  &__item {
+    position: absolute;
+
+    &--first {
+      top: 70px;
+      left: 70px;
+      z-index: 2;
+    }
+
+    &--second {
+      top: 450px;
+      left: 280px;
+      z-index: 3;
+    }
+
+    &--third {
+      top: 130px;
+      right: 70px;
+      z-index: 2;
+    }
+
+    &--fourth {
+      top: 720px;
+      right: 150px;
+      z-index: 4;
+    }
+
+    &--fifth {
+      top: 830px;
+      left: 70px;
+      z-index: 5;
+    }
+
+    &--sixth {
+      top: 1160px;
+      right: 340px;
+      z-index: 6;
+    }
   }
 }
