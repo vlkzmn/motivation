@@ -1,7 +1,7 @@
 .testimonial {
   position: relative;
-  height: 2200px;
-  padding-top: 60px;
+  min-height: 2200px;
+  padding-top: 90px;
   background: linear-gradient($colorLightBlue, 93%, $colorRose);
 
   &__wrapper {
@@ -132,10 +132,10 @@
       height: auto;
     }
 
-    // @media (max-width: 500px) {
-    //   width: 80%;
-    //   height: auto;
-    // }
+    @media (max-width: 600px) {
+      width: 80%;
+      height: auto;
+    }
   }
 
   &__item {
@@ -145,11 +145,11 @@
       width: 45vw;
     }
 
-    // @media (max-width: 500px) {
-    //   width: 100%;
-    //   position: static;
-    //   text-align: center;
-    // }
+    @media (max-width: 600px) {
+      width: 100%;
+      position: static;
+      text-align: center;
+    }
 
     &--first {
       top: 70px;
