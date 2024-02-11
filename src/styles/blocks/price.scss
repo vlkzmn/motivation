@@ -13,9 +13,11 @@
     flex-direction: column;
     margin-bottom: 60px;
     font-size: 5vw;
+    font-weight: normal;
 
     @media (max-width: 1000px) {
       font-size: 8vw;
+      font-weight: bold;
     }
 
     @media (min-width: 1600px) {
@@ -27,14 +29,14 @@
     font-family: "SK Cuber Expanded", serif;
     // font-size: 6vw;
     // line-height: 45px;
-    font-weight: 400;
+    // font-weight: 400;
   }
 
   &__title-outline {
     font-family: "SK Cuber Expanded Rounded Outline", serif;
     // font-size: 6vw;
     // line-height: 45px;
-    font-weight: 400;
+    // font-weight: 400;
   }
 
   &__content {
