@@ -93,11 +93,11 @@
 
     @media (max-width: 600px) {
       // box-sizing: content-box;
-      width: 320px;
+      width: 340px;
       // width: 95%;
-      height: 500px;
+      height: 550px;
       padding: 50px 0 60px 80px;
-      background-size: 320px 500px;
+      background-size: 340px 550px;
     }
 
     &--left {
@@ -172,8 +172,8 @@
     color: $colorBlue;
 
     @media (max-width: 600px) {
-      font-size: 20px;
-      margin-right: 10px;
+      font-size: 22px;
+      margin-right: 20px;
     }
   }
 
@@ -183,7 +183,7 @@
     color: $colorBlue;
 
     @media (max-width: 600px) {
-      font-size: 16px;
+      font-size: 20px;
     }
   }
 }
