@@ -2,6 +2,7 @@
 @import "fonts";
 @import "typography";
 
+@import "./blocks/menu.scss";
 @import "./blocks/header.scss";
 @import "./blocks/about.scss";
 @import "./blocks/price.scss";
@@ -27,8 +28,13 @@ a {
   color: inherit;
 }
 
-body {
+.body {
+  position: relative;
   background: $colorRose;
   font-family: "Blackest Text Trial", sans-serif;
   color: $colorWhite;
+
+  &--with-menu {
+    overflow: hidden;
+  }
 }

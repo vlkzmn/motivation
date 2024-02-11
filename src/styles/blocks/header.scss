@@ -3,27 +3,50 @@
   min-height: 100dvh;
   // margin-bottom: 90px;
 
+
+
   &__nav-wrapper {
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     background: $colorBlue;
     background: linear-gradient(180deg, rgba(60,108,168,1) -30%, rgba(234,178,187,1) 80%);
     z-index: 10;
   }
 
   &__nav {
-    margin: 0 auto;
-    width: 1300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1300px;
     height: 90px;
+    margin: 0 auto;
+    padding: 0 30px;
   }
 
   &__nav-left {
     display: flex;
     gap: 100px;
+
+    @media (max-width: 680px) {
+      display: none;
+    }
+
+    @media (max-width: 850px) {
+      gap: 50px;
+    }
+  }
+
+  &__burger-icon {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-image: url(../styles/icons/burger_icon.svg);
+    background-size: contain;
+
+    @media (max-width: 680px) {
+      display: block;
+    }
   }
 
   &__link {
@@ -56,7 +79,7 @@
   }
 
   &__icon {
-    display: inline-block;
+    display: block;
     width: 40px;
     height: 40px;
     line-height: 0;
@@ -103,6 +126,7 @@
 
   &__content-wrapper {
     position: relative;
+    top: 90px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -110,6 +134,11 @@
     max-width: 1300px;
     height: calc(100dvh - 90px);
     margin: 0 auto;
+    overflow: hidden;
+
+    @media (max-width: 1299px) {
+      padding: 0 30px;
+    }
   }
 
   &__star {
@@ -122,11 +151,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -2;
+
+    @media (max-width: 550px) {
+      left: calc(25% - 10vw);
+    }
   }
 
   &__letter-M {
     position: absolute;
-    top: 90px;
+    top: 0;
     right: 0;
     width: 64vh;
     // width: 477px;
@@ -140,24 +173,62 @@
     animation: move-m 10s infinite ease-in-out;
     // animation: move-m 10s infinite cubic-bezier(0.7, 0, 0.7, 1);
     // animation: move-m 10s infinite linear;
+
+    @media (max-width: 790px) {
+      width: 50%;
+      right: 10px;
+    }
   }
 
   &__title {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+    display: inline;
+    // display: flex;
+    // justify-content: center;
+    // padding: 0 20px;
+    margin-top: -50px;
     // margin-bottom: 20px;
     font-family: "SK Cuber Expanded Rounded Outline", serif;
-    font-size: 72px;
+    font-size: 68px;
+    text-align: center;
     color: $colorWhite;
+
+    @media (max-width: 1270px) {
+      text-align: left;
+    }
+
+    @media (max-width: 909px) {
+      width: 450px;
+      font-size: 50px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 40px;
+    }
+  }
+
+  &__title-span {
+    margin-left: -30px;
+
+    @media (max-width: 909px) {
+      margin: 0;
+    }
   }
 
   &__subtitle {
     // margin-bottom: 50px;
+    // padding-left: 30px;
     font-family: "SK Cuber Expanded Rounded", serif;
     font-size: 50px;
     font-weight: 400;
     color: $colorBlue;
+
+    @media (max-width: 909px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 25px;
+    }
   }
 
   &__text {
@@ -165,11 +236,16 @@
     font-size: 35px;
     letter-spacing: 10px;
     // color: $colorWhite;
+
+    @media (max-width: 909px) {
+      font-size: 20px;
+    }
   }
 
   &__buttons {
     // position: relative;
     display: flex;
+
     gap: 20px;
     padding: 0 40px;
     align-items: center;
@@ -177,6 +253,14 @@
     height: 90px;
     background-color: $colorWhite;
     border-radius: 45px;
+
+    @media (max-width: 710px) {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      height: auto;
+      padding: 10px 20px;
+    }
   }
 
   &__buttons-text {
@@ -186,5 +270,15 @@
     text-align: center;
     letter-spacing: 5px;
     color: $colorRose;
+
+    @media (max-width: 710px) {
+      width: 270px;
+      font-size: 16px;
+    }
+  }
+
+  &__buttons-icons {
+    display: flex;
+    gap: 20px;
   }
 }

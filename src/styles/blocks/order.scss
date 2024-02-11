@@ -62,7 +62,7 @@
     flex-direction: column;
     gap: 40px;
     width: 47%;
-    padding: 80px 20px 60px 140px;
+    padding: 80px 20px 60px 180px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -77,10 +77,46 @@
   }
 
   &__papers-title {
+    position: relative;
     margin-bottom: 20px;
     font-family: "JustBreathe", serif;
-    font-size: 70px;
+    font-size: 60px;
     color: $colorBlue;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: -90px;
+      width: 60px;
+      height: 60px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--first {
+      &::before {
+        background-image: url(../styles/icons/circle1.svg);
+      }
+    }
+
+    &--second {
+      &::before {
+        background-image: url(../styles/icons/circle2.svg);
+      }
+    }
+
+    &--third{
+      &::before {
+        background-image: url(../styles/icons/circle4.svg);
+      }
+    }
+
+    &--fourth {
+      &::before {
+        background-image: url(../styles/icons/circle1.svg);
+      }
+    }
   }
 
   &__papers-text {

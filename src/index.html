@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./favicon.ico" />
-    <title>Title</title>
+    <title>Мотиваційні листи</title>
+    <meta name="description" content="Написання мотиваційних листів, рефератів,
+    есе, творів, курсових, презентацій та інших завдань">
     <link rel="stylesheet" href="./styles/main.scss">
-  <body>
+  <body class="body">
     <header class="header">
       <div class="header__nav-wrapper">
         <nav class="header__nav">
+          <a href="#menu" class="header__burger-icon"></a>
+
           <ul class="header__nav-left">
             <li>
               <a href="#about" class="header__link">
@@ -54,7 +58,12 @@
         <div class="header__star"></div>
         <div class="header__letter-M"></div>
 
-        <h1 class="header__title">motivaciyniy_lyst</h1>
+        <h1 class="header__title">
+          <span>motiva</span>
+          <span class="header__title-span">ciyniy</span>
+          <span class="header__title-span">_lyst</span>
+          <!-- motivaciyniy_lyst -->
+        </h1>
 
         <h2 class="header__subtitle">студентські<br>роботи</h2>
 
@@ -66,14 +75,59 @@
         <div class="header__buttons">
           <p class="header__buttons-text">замовити через instagram чи telegram</p>
 
-          <a href="https://www.instagram.com/motivaciyniy_lyst/"
-            class="header__icon header__icon--instagram-rose header__icon--big" target="_blank"></a>
+          <div class="header__buttons-icons">
+            <a href="https://www.instagram.com/motivaciyniy_lyst/"
+              class="header__icon header__icon--instagram-rose header__icon--big" target="_blank"></a>
 
-          <a href="https:/t.me/motivaciyniy_lyst_bot" class="header__icon header__icon--telegram-rose header__icon--big"
-            target="_blank"></a>
+            <a href="https:/t.me/motivaciyniy_lyst_bot"
+              class="header__icon header__icon--telegram-rose header__icon--big" target="_blank"></a>
+          </div>
         </div>
       </div>
     </header>
+
+    <nav class="menu" id="menu">
+      <div class="menu__container">
+        <a href="#" class="menu__close-icon"></a>
+
+        <ul class="menu__nav">
+          <li>
+            <a href="#about" class="menu__link">
+              ми
+            </a>
+          </li>
+
+          <li>
+            <a href="#price" class="menu__link">
+              ціни
+            </a>
+          </li>
+
+          <li>
+            <a href="#testimonial" class="menu__link">
+              відгуки
+            </a>
+          </li>
+
+          <li>
+            <a href="#order" class="menu__link">
+              замовлення
+            </a>
+          </li>
+        </ul>
+
+        <div class="menu__buttons">
+          <p class="menu__buttons-text">замовити через instagram чи telegram</p>
+
+          <div class="menu__buttons-icons">
+            <a href="https://www.instagram.com/motivaciyniy_lyst/" class="menu__icon menu__icon--instagram"
+              target="_blank"></a>
+
+            <a href="https:/t.me/motivaciyniy_lyst_bot" class="menu__icon menu__icon--telegram" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <main>
       <section class="about" id="about">
@@ -250,19 +304,19 @@
       <section class="testimonial" id="testimonial">
         <div class="testimonial__wrapper">
           <h2 class="testimonial__title">
-            наймиліші відгуки !!
+            наймиліші відгуки&nbsp;!!
           </h2>
 
           <p class="testimonial__text">
             хочемо трошки похизуватися
           </p>
 
-          <div class="testimonial__buble testimonial__buble--first"></div>
+          <!-- <div class="testimonial__buble testimonial__buble--first"></div>
           <div class="testimonial__buble testimonial__buble--second"></div>
           <div class="testimonial__buble testimonial__buble--third"></div>
           <div class="testimonial__buble testimonial__buble--fourth"></div>
           <div class="testimonial__buble testimonial__buble--fifth"></div>
-          <div class="testimonial__buble testimonial__buble--sixth"></div>
+          <div class="testimonial__buble testimonial__buble--sixth"></div> -->
 
           <div class="testimonial__content">
             <div class="testimonial__item testimonial__item--first">
@@ -292,7 +346,7 @@
         </div>
       </section>
 
-      <section class="order" id="order">
+      <!-- <section class="order" id="order">
         <div class="order__wrapper">
           <h2 class="order__title">
             проконсультуйтеся
@@ -316,7 +370,7 @@
           <div class="order__papers">
             <div class="order__paper order__paper--left">
               <div>
-                <h3 class="order__papers-title">
+                <h3 class="order__papers-title order__papers-title--first">
                   термiновi роботи
                 </h3>
 
@@ -330,7 +384,7 @@
               </div>
 
               <div>
-                <h3 class="order__papers-title">
+                <h3 class="order__papers-title order__papers-title--second">
                   iноземнi мови
                 </h3>
 
@@ -342,7 +396,7 @@
 
             <div class="order__paper order__paper--right">
               <div>
-                <h3 class="order__papers-title">
+                <h3 class="order__papers-title order__papers-title--third">
                   без повних передплат
                 </h3>
 
@@ -353,7 +407,7 @@
               </div>
 
               <div>
-                <h3 class="order__papers-title">
+                <h3 class="order__papers-title order__papers-title--fourth">
                   Псс!
                 </h3>
 
@@ -368,7 +422,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer class="footer">

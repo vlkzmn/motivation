@@ -1,0 +1,75 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100dvh;
+  padding: 30px;
+  background-color: $colorDarkBlue;
+  transform: translateX(-100%);
+  transition: transform $smoothTime linear;
+  z-index: 20;
+
+  &:target {
+    transform: translateX(0);
+  }
+
+  &__close-icon {
+    display: block;
+    margin-bottom: 40px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../styles/icons/close.svg);
+    background-size: contain;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    font-size: 26px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    border: 1px solid $colorWhite;
+    border-radius: 45px;
+  }
+
+  &__buttons-text {
+    margin-bottom: 20px;
+    font-family: "Ubuntu";
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+
+  &__buttons-icons {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    line-height: 0;
+    background-size: contain;
+
+    &--instagram {
+      background-image: url(../styles/icons/instagram.svg);
+    }
+
+    &--telegram {
+      background-image: url(../styles/icons/telegram.svg);
+    }
+  }
+}
