@@ -1,8 +1,12 @@
 .testimonial {
   position: relative;
-  min-height: 2200px;
+  height: 2200px;
   padding-top: 90px;
   background: linear-gradient($colorLightBlue, 93%, $colorRose);
+
+  @media (max-width: 800px) {
+    height: 3200px;
+  }
 
   &__wrapper {
     position: relative;
@@ -132,10 +136,10 @@
       height: auto;
     }
 
-    @media (max-width: 600px) {
-      width: 80%;
-      height: auto;
-    }
+    // @media (max-width: 600px) {
+    //   width: 80%;
+    //   height: auto;
+    // }
   }
 
   &__item {
@@ -145,10 +149,10 @@
       width: 45vw;
     }
 
-    @media (max-width: 600px) {
-      width: 100%;
-      position: static;
-      text-align: center;
+    @media (max-width: 800px) {
+      width: 85%;
+      // position: static;
+      // text-align: center;
     }
 
     &--first {
@@ -159,6 +163,11 @@
       @media (max-width: 1130px) {
         top: 0px;
         left: 20px;
+      }
+
+      @media (max-width: 800px) {
+        top: 0px;
+        left: 5px;
       }
     }
 
@@ -172,6 +181,11 @@
         top: calc(35vw + 50px);
         left: 40px;
       }
+
+      @media (max-width: 800px) {
+        top: calc(88vw + 50px);
+        left: 5px;
+      }
     }
 
     &--third {
@@ -182,6 +196,11 @@
       @media (max-width: 1130px) {
         top: 70px;
         right: 40px;
+      }
+
+      @media (max-width: 800px) {
+        top: calc(42vw + 50px);
+        right: 5px;
       }
     }
 
@@ -196,6 +215,12 @@
         // top: 440px;
         right: 20px;
       }
+
+      @media (max-width: 800px) {
+        top: calc(136vw + 50px);
+        // top: 440px;
+        right: 5px;
+      }
     }
 
     &--fifth {
@@ -208,6 +233,12 @@
         // top: 440px;
         left: 20px;
       }
+
+      @media (max-width: 800px) {
+        top: calc(195vw + 50px);
+        // top: 440px;
+        left: 5px;
+      }
     }
 
     &--sixth {
@@ -219,6 +250,12 @@
         top: calc(80vw + 50px);
         // top: 440px;
         right: 40px;
+      }
+
+      @media (max-width: 800px) {
+        top: calc(250vw + 50px);
+        // top: 440px;
+        right: 5px;
       }
     }
   }
