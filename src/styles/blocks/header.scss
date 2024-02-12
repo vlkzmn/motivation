@@ -18,6 +18,7 @@
     align-items: center;
     max-width: 1300px;
     height: 90px;
+    line-height: 90px;
     margin: 0 auto;
     padding: 0 30px;
   }
@@ -151,7 +152,7 @@
     z-index: -2;
 
     @media (max-width: 550px) {
-      left: calc(25% - 10vw);
+      left: calc(45% - 10vw);
     }
   }
 
