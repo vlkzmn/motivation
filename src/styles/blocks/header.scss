@@ -241,9 +241,7 @@
   }
 
   &__buttons {
-    // position: relative;
     display: flex;
-
     gap: 20px;
     padding: 0 40px;
     align-items: center;
@@ -254,10 +252,6 @@
 
     @media (max-width: 710px) {
       display: none;
-      flex-direction: column;
-      gap: 10px;
-      height: auto;
-      padding: 10px 20px;
     }
   }
 
@@ -268,11 +262,6 @@
     text-align: center;
     letter-spacing: 5px;
     color: $colorRose;
-
-    @media (max-width: 710px) {
-      width: 90%;
-      // font-size: 18px;
-    }
   }
 
   &__buttons-icons {

@@ -2,8 +2,9 @@
 @import "fonts";
 @import "typography";
 
-@import "./blocks/menu.scss";
 @import "./blocks/header.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/botton-order.scss";
 @import "./blocks/about.scss";
 @import "./blocks/price.scss";
 @import "./blocks/testimonial.scss";
@@ -37,22 +38,5 @@ a {
 
   &--with-menu {
     overflow: hidden;
-  }
-}
-
-.buttons {
-  display: none;
-  gap: 20px;
-  margin: 0 30px;
-  padding: 0 40px;
-  align-items: center;
-  background-color: $colorWhite;
-  border-radius: 45px;
-
-  @media (max-width: 710px) {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px 20px;
   }
 }
