@@ -4,8 +4,12 @@
   padding-top: 90px;
   background: linear-gradient($colorLightBlue, 93%, $colorRose);
 
+  @media (max-width: 1130px) {
+    height: 170vw;
+  }
+
   @media (max-width: 800px) {
-    height: 3200px;
+    height: 430vw;
   }
 
   &__wrapper {
@@ -18,14 +22,12 @@
     margin-bottom: 40px;
     text-align: center;
     font-family: "SK Cuber Expanded Rounded Outline", serif;
-    // font-size: 110px;
     font-weight: 400;
     color: $colorRose;
     font-size: 5vw;
 
     @media (max-width: 1000px) {
       font-size: 8vw;
-      // font-weight: bold;
     }
 
     @media (min-width: 1600px) {
@@ -50,6 +52,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
+
+    @media (max-width: 1300px) {
+      display: none;
+    }
 
     &--first {
       top: 320px;
@@ -121,11 +127,6 @@
   &__content {
     position: relative;
     width: 100%;
-
-    // @media (max-width: 500px) {
-    //   display: flex;
-    //   flex-direction: column;
-    // }
   }
 
   &__image {
@@ -136,11 +137,6 @@
       width: 100%;
       height: auto;
     }
-
-    // @media (max-width: 600px) {
-    //   width: 80%;
-    //   height: auto;
-    // }
   }
 
   &__item {
@@ -152,8 +148,6 @@
 
     @media (max-width: 800px) {
       width: 85%;
-      // position: static;
-      // text-align: center;
     }
 
     &--first {
@@ -174,17 +168,16 @@
 
     &--second {
       top: 470px;
-      // top: 450px;
       left: 280px;
       z-index: 3;
 
       @media (max-width: 1130px) {
-        top: calc(35vw + 50px);
+        top: 35vw;
         left: 40px;
       }
 
       @media (max-width: 800px) {
-        top: calc(88vw + 50px);
+        top: 110vw;
         left: 5px;
       }
     }
@@ -200,26 +193,23 @@
       }
 
       @media (max-width: 800px) {
-        top: calc(42vw + 50px);
+        top: 55vw;
         right: 5px;
       }
     }
 
     &--fourth {
       top: 800px;
-      // top: 720px;
       right: 150px;
       z-index: 4;
 
       @media (max-width: 1130px) {
-        top: calc(40vw + 50px);
-        // top: 440px;
+        top: 42vw;
         right: 20px;
       }
 
       @media (max-width: 800px) {
-        top: calc(136vw + 50px);
-        // top: 440px;
+        top: 165vw;
         right: 5px;
       }
     }
@@ -230,14 +220,12 @@
       z-index: 5;
 
       @media (max-width: 1130px) {
-        top: calc(70vw + 50px);
-        // top: 440px;
+        top: 68vw;
         left: 20px;
       }
 
       @media (max-width: 800px) {
-        top: calc(195vw + 50px);
-        // top: 440px;
+        top: 220vw;
         left: 5px;
       }
     }
@@ -248,14 +236,12 @@
       z-index: 6;
 
       @media (max-width: 1130px) {
-        top: calc(80vw + 50px);
-        // top: 440px;
+        top: 77vw;
         right: 40px;
       }
 
       @media (max-width: 800px) {
-        top: calc(250vw + 50px);
-        // top: 440px;
+        top: 275vw;
         right: 5px;
       }
     }

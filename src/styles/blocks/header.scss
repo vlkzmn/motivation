@@ -1,6 +1,7 @@
 .header {
   position: relative;
-  min-height: 100dvh;
+  margin-bottom: 50px;
+  overflow: hidden;
 
   &__nav-wrapper {
     position: fixed;
@@ -19,6 +20,10 @@
     line-height: 90px;
     margin: 0 auto;
     padding: 0 30px;
+
+    @media (max-width: 680px) {
+      height: 70px;
+    }
   }
 
   &__nav-left {
@@ -97,44 +102,39 @@
 
     &--instagram-rose {
       background-image: url(../styles/icons/instagram-rose.svg);
+
+      @media (max-width: 710px) {
+        background-image: url(../styles/icons/instagram.svg);
+      }
     }
 
     &--telegram-rose {
       background-image: url(../styles/icons/telegram-rose.svg);
+
+      @media (max-width: 710px) {
+        background-image: url(../styles/icons/telegram.svg);
+      }
     }
 
     &--big {
       width: 60px;
       height: 60px;
-    }
-  }
 
-  @keyframes move-m {
-    from {
-      transform: scale(100%);
-    }
-    50% {
-      transform: scale(93%);
-    }
-    to {
-      transform: scale(100%);
+      @media (max-width: 710px) {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 
   &__content-wrapper {
-    position: relative;
-    top: 90px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: space-evenly;
     max-width: 1300px;
-    height: calc(100dvh - 90px);
     margin: 0 auto;
+    padding: 90px 30px 0;
     overflow: hidden;
 
-    @media (max-width: 1299px) {
-      padding: 0 30px;
+    @media (max-width: 680px) {
+      padding-top: 70px;
     }
   }
 
@@ -156,34 +156,45 @@
 
   &__letter-M {
     position: absolute;
-    top: 0;
+    top: 90px;
     right: 0;
+    max-width: 445px;
+    max-height: 560px;
     width: 64vh;
-    // width: 477px;
-    // height: 600px;
     height: 80vh;
     background-image: url(../images/m.png);
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: -1;
-    // transition: transform 4000ms linear;
     animation: move-m 10s infinite ease-in-out;
-    // animation: move-m 10s infinite cubic-bezier(0.7, 0, 0.7, 1);
-    // animation: move-m 10s infinite linear;
+    z-index: -1;
 
-    @media (max-width: 790px) {
+    @media (max-width: 909px) {
       width: 50%;
       right: 10px;
+      background-position: top right;
+    }
+
+    @media (min-width: 1300px) {
+      width: 445px;
+      height: 560px;
+      right: calc((100vw - 1300px) / 2);
+    }
+  }
+
+  @keyframes move-m {
+    from {
+      transform: scale(100%);
+    }
+    50% {
+      transform: scale(93%);
+    }
+    to {
+      transform: scale(100%);
     }
   }
 
   &__title {
     display: inline;
-    // display: flex;
-    // justify-content: center;
-    // padding: 0 20px;
-    margin-top: -50px;
-    // margin-bottom: 20px;
     font-family: "SK Cuber Expanded Rounded Outline", serif;
     font-size: 68px;
     text-align: center;
@@ -196,7 +207,6 @@
     @media (max-width: 909px) {
       width: 450px;
       font-size: 50px;
-      // font-weight: bold;
     }
 
     @media (max-width: 400px) {
@@ -213,8 +223,7 @@
   }
 
   &__subtitle {
-    // margin-bottom: 50px;
-    // padding-left: 30px;
+    margin: 30px 0;
     font-family: "SK Cuber Expanded Rounded", serif;
     font-size: 50px;
     font-weight: 400;
@@ -230,10 +239,9 @@
   }
 
   &__text {
-    // margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 35px;
     letter-spacing: 10px;
-    // color: $colorWhite;
 
     @media (max-width: 909px) {
       font-size: 20px;
@@ -243,15 +251,24 @@
   &__buttons {
     display: flex;
     gap: 20px;
-    padding: 0 40px;
     align-items: center;
     width: max-content;
     height: 90px;
+    padding: 0 40px;
     background-color: $colorWhite;
     border-radius: 45px;
 
     @media (max-width: 710px) {
-      display: none;
+      flex-direction: column;
+      align-items: start;
+      max-width: 280px;
+      width: auto;
+      height: auto;
+      padding: 10px 20px;
+      background-color: transparent;
+      color: $colorWhite;
+      border: 1px solid $colorWhite;
+      border-radius: 25px;
     }
   }
 
@@ -259,9 +276,14 @@
     width: 400px;
     font-family: "Ubuntu";
     font-size: 20px;
-    text-align: center;
     letter-spacing: 5px;
     color: $colorRose;
+
+    @media (max-width: 710px) {
+      width: auto;
+      font-size: 16px;
+      color: $colorWhite;
+    }
   }
 
   &__buttons-icons {

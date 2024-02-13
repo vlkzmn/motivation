@@ -16,9 +16,9 @@
 
   &__close-icon {
     display: block;
-    margin-bottom: 60px;
     width: 30px;
     height: 30px;
+    margin-bottom: 60px;
     background-image: url(../styles/icons/close.svg);
     background-size: contain;
   }
@@ -34,34 +34,14 @@
     font-size: 26px;
   }
 
-  // &__buttons {
-  //   display: flex;
-  //   flex-direction: column;
-  //   gap: 20px;
-  //   padding: 20px;
-  //   align-items: center;
-  //   border: 1px solid $colorWhite;
-  //   border-radius: 45px;
-  // }
-
-  // &__buttons-text {
-  //   margin-bottom: 20px;
-  //   font-family: "Ubuntu";
-  //   font-size: 22px;
-  //   text-align: center;
-  //   letter-spacing: 5px;
-  // }
-
   &__buttons-icons {
     display: flex;
     gap: 40px;
   }
 
   &__icon {
-    display: block;
     width: 70px;
     height: 70px;
-    line-height: 0;
     background-size: contain;
 
     &--instagram {
