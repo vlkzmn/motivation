@@ -44,7 +44,7 @@
     box-sizing: border-box;
     position: relative;
     width: 31%;
-    padding: 40px;
+    padding: 40px 30px;
     background-color: $colorDarkRose;
     border-radius: 50px;
 
@@ -146,6 +146,5 @@
     background-image: url(../styles/icons/arrow.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 10;
   }
 }
