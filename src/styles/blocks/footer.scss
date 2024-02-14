@@ -13,12 +13,7 @@
     background-size: contain;
     cursor: default;
     opacity: 0;
-    transition: all $smoothTime;
     z-index: 10;
-
-    &:hover {
-      transform: scale(1.1);
-    }
 
     &--show {
       cursor: pointer;

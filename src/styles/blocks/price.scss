@@ -42,6 +42,7 @@
 
   &__item {
     box-sizing: border-box;
+    position: relative;
     width: 31%;
     padding: 40px;
     background-color: $colorDarkRose;
@@ -94,6 +95,10 @@
     font-family: "Ubuntu", Arial;
     font-size: 22px;
     font-weight: bold;
+
+    &--last {
+      margin-bottom: 100px;
+    }
   }
 
   &__item-cost {
@@ -134,13 +139,13 @@
 
   &__arrow-huge {
     position: absolute;
-    top: -100px;
-    left: 25px;
+    top: -125px;
+    left: 60px;
     width: 350px;
     height: 200px;
-    // background-image: url(../styles/icons/arrow-huge2.svg);
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    z-index: 0;
+    background-image: url(../styles/icons/arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
   }
 }

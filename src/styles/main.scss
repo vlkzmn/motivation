@@ -4,7 +4,6 @@
 
 @import "./blocks/header.scss";
 @import "./blocks/menu.scss";
-@import "./blocks/botton-order.scss";
 @import "./blocks/about.scss";
 @import "./blocks/price.scss";
 @import "./blocks/testimonial.scss";
@@ -38,5 +37,14 @@ a {
 
   &--with-menu {
     overflow: hidden;
+  }
+}
+
+a, button {
+  &:active {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
   }
 }
