@@ -144,7 +144,7 @@
     left: calc(45% - 10vw);
     width: 500px;
     height: 500px;
-    background-image: url(../images/star.png);
+    background-image: url(../images/star.webp);
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -2;
@@ -162,7 +162,7 @@
     max-height: 560px;
     width: 64vh;
     height: 80vh;
-    background-image: url(../images/m.png);
+    background-image: url(../images/m.webp);
     background-size: contain;
     background-repeat: no-repeat;
     animation: move-m 10s infinite ease-in-out;
@@ -197,6 +197,7 @@
     display: inline;
     font-family: "SK Cuber Expanded Rounded Outline", serif;
     font-size: 68px;
+    font-weight: 400;
     text-align: center;
     color: $colorWhite;
 
