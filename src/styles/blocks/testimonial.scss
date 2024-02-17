@@ -1,15 +1,15 @@
 .testimonial {
   position: relative;
-  height: 2200px;
+  height: 430vw;
   padding-top: 90px;
   background: linear-gradient($colorLightBlue, 93%, $colorRose);
 
-  @media (max-width: 1130px) {
+  @media (min-width: 800px) {
     height: 170vw;
   }
 
-  @media (max-width: 800px) {
-    height: 430vw;
+  @media (min-width: 1130px) {
+    height: 2200px;
   }
 
   &__wrapper {
@@ -24,10 +24,10 @@
     font-family: "SK Cuber Expanded Rounded Outline", serif;
     font-weight: 400;
     color: $colorRose;
-    font-size: 5vw;
+    font-size: 8vw;
 
-    @media (max-width: 1000px) {
-      font-size: 8vw;
+    @media (min-width: 1000px) {
+      font-size: 5vw;
     }
 
     @media (min-width: 1600px) {
@@ -38,23 +38,24 @@
   &__text {
     margin-bottom: 40px;
     text-align: center;
-    font-family: "Ubuntu", Arial;
-    font-size: 22px;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    font-size: 18px;
     color: $colorRose;
 
-    @media (max-width: 500px) {
-      font-size: 18px;
+    @media (min-width: 500px) {
+      font-size: 22px;
     }
   }
 
   &__buble {
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
+    display: none;
 
-    @media (max-width: 1300px) {
-      display: none;
+    @media (min-width: 1300px) {
+      display: block;
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 1;
     }
 
     &--first {
@@ -130,119 +131,115 @@
   }
 
   &__image {
-    width: 500px;
-    height: 579px;
+    width: 100%;
+    height: auto;
 
-    @media (max-width: 1130px) {
-      width: 100%;
-      height: auto;
+    @media (min-width: 1130px) {
+      width: 500px;
+      height: 579px;
     }
   }
 
   &__item {
     position: absolute;
+    width: 85%;
 
-    @media (max-width: 1130px) {
-      width: 45vw;
-    }
-
-    @media (max-width: 800px) {
-      width: 85%;
+    @media (min-width: 800px) {
+      width: 45%;
     }
 
     &--first {
-      top: 70px;
-      left: 70px;
+      top: 0;
+      left: 5px;
       z-index: 2;
 
-      @media (max-width: 1130px) {
-        top: 0px;
+      @media (min-width: 800px) {
         left: 20px;
       }
-
-      @media (max-width: 800px) {
-        top: 0px;
-        left: 5px;
+      
+      @media (min-width: 1130px) {
+        top: 70px;
+        left: 70px;
       }
     }
 
     &--second {
-      top: 470px;
-      left: 280px;
+      top: 110vw;
+      left: 5px;
       z-index: 3;
 
-      @media (max-width: 1130px) {
+      @media (min-width: 800px) {
         top: 35vw;
         left: 40px;
       }
-
-      @media (max-width: 800px) {
-        top: 110vw;
-        left: 5px;
+      
+      @media (min-width: 1130px) {
+        top: 470px;
+        left: 280px;
       }
     }
 
     &--third {
-      top: 130px;
-      right: 70px;
+      top: 55vw;
+      right: 5px;
       z-index: 2;
 
-      @media (max-width: 1130px) {
+      @media (min-width: 800px) {
         top: 70px;
         right: 40px;
       }
-
-      @media (max-width: 800px) {
-        top: 55vw;
-        right: 5px;
+      
+      @media (min-width: 1130px) {
+        top: 130px;
+        right: 70px;
       }
     }
 
     &--fourth {
-      top: 800px;
-      right: 150px;
+      top: 165vw;
+      right: 5px;
       z-index: 4;
 
-      @media (max-width: 1130px) {
+      @media (min-width: 800px) {
         top: 42vw;
         right: 20px;
       }
-
-      @media (max-width: 800px) {
-        top: 165vw;
-        right: 5px;
+      
+      @media (min-width: 1130px) {
+        top: 800px;
+        right: 70px;
       }
     }
 
     &--fifth {
-      top: 830px;
-      left: 70px;
+      top: 220vw;
+      left: 5px;
       z-index: 5;
 
-      @media (max-width: 1130px) {
+      @media (min-width: 800px) {
         top: 68vw;
         left: 20px;
       }
-
-      @media (max-width: 800px) {
-        top: 220vw;
-        left: 5px;
+      
+      @media (min-width: 1130px) {
+        top: 830px;
+        left: 70px;
       }
     }
 
     &--sixth {
-      top: 1160px;
-      right: 340px;
+      top: 275vw;
+      right: 5px;
       z-index: 6;
 
-      @media (max-width: 1130px) {
+      @media (min-width: 800px) {
         top: 77vw;
         right: 40px;
       }
-
-      @media (max-width: 800px) {
-        top: 275vw;
-        right: 5px;
+      
+      @media (min-width: 1130px) {
+        top: 1160px;
+        right: 340px;
       }
     }
   }

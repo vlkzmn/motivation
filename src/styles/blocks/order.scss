@@ -21,20 +21,20 @@
   &__text-order {
     margin-bottom: 20px;
     font-family: "Ubuntu italic", serif;
-    font-size: 4vw;
+    font-size: 8vw;
     font-weight: bold;
 
-    @media (max-width: 800px) {
-      font-size: 8vw;
+    @media (min-width: 800px) {
+      font-size: 4vw;
     }
   }
 
   &__text-more {
     margin-bottom: 40px;
-    font-size: 4vw;
+    font-size: 8vw;
 
-    @media (max-width: 800px) {
-      font-size: 8vw;
+    @media (min-width: 800px) {
+      font-size: 4vw;
     }
   }
 
@@ -46,15 +46,15 @@
 
   &__icon {
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 20vw;
+    height: 20vw;
     background-size: contain;
     background-repeat: no-repeat;
     transition: transform $smoothTime;
 
-    @media (max-width: 1000px) {
-      width: 20vw;
-      height: 20vw;
+    @media (min-width: 1000px) {
+      width: 200px;
+      height: 200px;
     }
 
     &:hover {
@@ -72,14 +72,14 @@
 
   &__papers {
     display: flex;
-    justify-content: space-between;
-    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 
-    @media (max-width: 1200px) {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      // display: block;
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
     }
   }
 
@@ -88,20 +88,18 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 600px;
-    height: 750px;
-    padding: 60px 20px 60px 180px;
-    background-size: contain;
+    width: 340px;
+    height: 550px;
+    padding: 50px 0 60px 80px;
+    background-size: 340px 550px;
     background-position: center;
     background-repeat: no-repeat;
 
-    @media (max-width: 600px) {
-      // box-sizing: content-box;
-      width: 340px;
-      // width: 95%;
-      height: 550px;
-      padding: 50px 0 60px 80px;
-      background-size: 340px 550px;
+    @media (min-width: 600px) {
+      width: 600px;
+      height: 750px;
+      padding: 60px 20px 60px 180px;
+      background-size: contain;
     }
 
     &--left {
@@ -115,31 +113,31 @@
 
   &__papers-title {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: "JustBreathe", serif;
-    font-size: 60px;
+    font-size: 30px;
     color: $colorBlue;
 
-    @media (max-width: 600px) {
-      margin-bottom: 10px;
-      font-size: 30px;
+    @media (min-width: 600px) {
+      margin-bottom: 20px;
+      font-size: 60px;
     }
 
     &::before {
       position: absolute;
       content: "";
-      top: 10px;
-      left: -90px;
-      width: 60px;
-      height: 60px;
+      top: 5px;
+      left: -60px;
+      width: 30px;
+      height: 30px;
       background-repeat: no-repeat;
       background-size: contain;
 
-      @media (max-width: 600px) {
-        top: 5px;
-        left: -60px;
-        width: 30px;
-        height: 30px;
+      @media (min-width: 600px) {
+        top: 10px;
+        left: -90px;
+        width: 60px;
+        height: 60px;
       }
     }
 
@@ -155,7 +153,7 @@
       }
     }
 
-    &--third{
+    &--third {
       &::before {
         background-image: url(../styles/icons/circle4.svg);
       }
@@ -170,24 +168,25 @@
 
   &__papers-text {
     margin-bottom: 20px;
-    margin-right: 80px;
+    margin-right: 20px;
     font-family: "Pecita", serif;
-    font-size: 26px;
+    font-size: 22px;
     color: $colorBlue;
 
-    @media (max-width: 600px) {
-      font-size: 22px;
-      margin-right: 20px;
+    @media (min-width: 600px) {
+      margin-right: 80px;
+      font-size: 26px;
+      
     }
   }
 
   &__papers-promokod {
     font-family: "Ubuntu", serif;
-    font-size: 26px;
+    font-size: 20px;
     color: $colorBlue;
 
-    @media (max-width: 600px) {
-      font-size: 20px;
+    @media (min-width: 600px) {
+      font-size: 26px;
     }
   }
 }

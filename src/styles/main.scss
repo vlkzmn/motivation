@@ -14,7 +14,13 @@ html {
   scroll-behavior: smooth;
 }
 
-body, h1, h2, h3, p, ul, li {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -39,10 +45,11 @@ a {
   }
 }
 
-a, button {
+a,
+button {
   &:active {
     -webkit-tap-highlight-color: transparent;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -moz-tap-highlight-color: transparent;
     -ms-tap-highlight-color: transparent;
   }

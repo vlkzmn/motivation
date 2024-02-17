@@ -1,32 +1,35 @@
 @font-face {
-    font-family: 'SK Cuber Expanded Rounded';
-    src: local('SK Cuber Expanded Rounded'), local('SKCuber-ExpandedRounded'),
-        url('SKCuber-ExpandedRounded.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "SK Cuber Expanded Rounded";
+  src: local("SK Cuber Expanded Rounded"),
+    local("SKCuber-ExpandedRounded"),
+    url("SKCuber-ExpandedRounded.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SK Cuber Expanded';
-    src: local('SK Cuber Expanded'), local('SKCuber-Expanded'),
-        url('SKCuber-Expanded.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "SK Cuber Expanded";
+  src: local("SK Cuber Expanded"),
+    local("SKCuber-Expanded"),
+    url("SKCuber-Expanded.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SK Cuber Expanded Rounded Outline';
-    src: local('SK Cuber Expanded Rounded Outline'), local('SKCuber-ExpRoundedOutline'),
-        url('SKCuber-ExpRoundedOutline.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "SK Cuber Expanded Rounded Outline";
+  src: local("SK Cuber Expanded Rounded Outline"),
+    local("SKCuber-ExpRoundedOutline"),
+    url("SKCuber-ExpRoundedOutline.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SK Cuber Expanded Outline';
-    src: local('SK Cuber Expanded Outline'), local('SKCuber-ExpandedOutline'),
-        url('SKCuber-ExpandedOutline.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "SK Cuber Expanded Outline";
+  src: local("SK Cuber Expanded Outline"),
+    local("SKCuber-ExpandedOutline"),
+    url("SKCuber-ExpandedOutline.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-

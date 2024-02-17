@@ -1,7 +1,8 @@
 @font-face {
-    font-family: 'Blackest Text Trial';
-    src: local('Blackest Text Trial Regular'), local('BlackestTextTrial-Regular'),
-        url('BlackestTextTrial-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Blackest Text Trial";
+  src: local("Blackest Text Trial Regular"),
+    local("BlackestTextTrial-Regular"),
+    url("BlackestTextTrial-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
