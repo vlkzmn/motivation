@@ -1,6 +1,6 @@
 # Landing page for Copywriter
 
-<p>My personal page, it’s about me, my skills, my projects and getting in touch.</p>
+<p>Landing page for a copywriter demonstrates the topics of work that can be ordered, the timing and cost of services, the advantages of their work, and positive customer reviews.</p>
 <h1><a href="https://motivaciyniy-lyst.pp.ua/">LIVE DEMO</a></h1>
 
 # Technologies used
@@ -14,26 +14,23 @@
 
 # Features Overview
 
-<ul>
-  <li>Layout is adaptive and responsive. It works correctly on all screen sizes (mobile, tablet and desktop).</li>
-  <li>Custom domain was connected to GitHub pages.</li>
-  <li>An API has been created (Node.js, Express, Nodemailer) on a separate server for sending messages from the page.</li>
-  <li>Semantic and OG meta tags are used.</li>
-  <li>Schema Markup JSON-LD implemented.</li>
-  <li>PWA implemented on the page.</li>
-  <li>Images are optimized.</li>
-  <li>Google search console and analytics have been added to the page.</li>
-  <li>SEO optimization is done.</li>
-</ul>
-
-<p><em>See google lighthouse report below:</em></p>
+<p>Layout is adaptive and responsive. It works correctly on all screen sizes (mobile, tablet and desktop). Is implemented using the mobile-first approach.</p>
+<p>The code is valid HTML5 and CSS3. The page design is made using gradients and animation. BEM methodology is used for naming classes. This naming convention makes the code more readable and understandable, helps to avoid naming conflicts and makes the code easier to maintain and reuse.</p>
+<p>Semantic and open graph tags are used. SEO optimization is done. Images are optimized, webp and svg formats were used. Custom domain was connected to GitHub pages. Google search console and analytics have been added to the page.</p>
+<p><em>see google lighthouse report below (accessibility are not ideal because the lighthouse does not like the light fonts on a white background that the designer intended):</em></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vlkzmn/motivation/master/src/images/preview.png" width="700px" alt="My Personal Page lighthouse">
+  <img src="https://raw.githubusercontent.com/vlkzmn/motivation/master/src/images/lighthouse.png" width="700px" alt="Landing page for Copywriter lighthouse">
 </p>
 
 # Preview
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vlkzmn/motivation/master/src/images/preview.png" alt="My Personal Page GIF">
+  <img src="https://raw.githubusercontent.com/vlkzmn/motivation/master/src/images/preview.gif" alt="Landing page for Copywriter GIF">
 </p>
+
+# In Conclusion
+
+<p>This project aimed to improve my skills in HTML5, CSS3, Sass (SCSS), BEM methodology, JavaScript, responsive and adaptive layout and build the entire landing page positioning elements using all the tools such as flexbox, media queries, animation, gradients etc.</p>
+
+<p>The main challenge was to combine all the knowledge and skills I have acquired so far and implement a landing page from scratch.</p>
